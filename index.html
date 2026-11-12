@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha galeria interativa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="identificacao">PROJETO DE DESENVOLVIMENTO WEB</p>
+      <h1>Minha galeria de fotos</h1>
+      <p>Uma coleção de imagens com navegação usando JavaScript.</p>
+    </header>
+
+    <section class="galeria" aria-label="Galeria de fotografias">
+      <div class="foto-area">
+        <button id="anterior" class="seta" aria-label="Foto anterior">❮</button>
+        <img id="foto-principal" src="imagens/foto1.jpg"
+             alt="Primeira fotografia da galeria">
+        <button id="proxima" class="seta" aria-label="Próxima foto">❯</button>
+      </div>
+
+      <p id="legenda">Foto 1</p>
+      <p id="contador">Foto 1 de 4</p>
+
+      <div class="controles">
+        <button id="iniciar">Iniciar apresentação</button>
+        <button id="pausar">Pausar apresentação</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Desenvolvido por: SEU NOME</p>
+    </footer>
+  </main>
+</body>
+</html>
